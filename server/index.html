@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    function getFont () {
+      let font = 100
+      let width = 750
+      let clientWidth = document.documentElement.clientWidth
+      document.documentElement.style.fontSize = clientWidth * 100 / width + 'px'
+    }
+    getFont()
+    window.addEventListener('resize', getFont)
+  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html {
+      font-size: 100px;
+      color: #333;
+    }
+    html, body {
+      height: 100%;
+    }
+    div {
+      box-sizing: border-box;
+    }
+    .header {
+      padding: .27rem .32rem;
+      /* height: .88rem; */
+      background-color: #fff;
+      font-size: .34rem;
+      line-height: .34rem; 
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <span class="title">活动规则</span>
+  </div>
+</body>
+</html>
